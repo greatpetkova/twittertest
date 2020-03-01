@@ -1,0 +1,1 @@
+docker run --rm -it --env-file ./.env -v "$PWD":/usr/src -w /usr/src twitter_test mvn -q
