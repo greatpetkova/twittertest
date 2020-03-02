@@ -50,7 +50,7 @@ public class Twitter_Test {
         } catch (TwitterException e) {
             deleteTweet(twitter, tweetId);
             Assert.fail(e.getMessage());
-            return;//explain why
+            return;
         }
 
         ChromeOptions options = new ChromeOptions();
@@ -155,7 +155,7 @@ public class Twitter_Test {
             deleteTweet(twitter, replyTweetId);
             driver.quit();
 
-            Assert.fail("PinkLink not found");
+            Assert.fail("PinLink not found");
             return;
         }
 
