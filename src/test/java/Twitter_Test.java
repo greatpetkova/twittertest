@@ -81,7 +81,6 @@ public class Twitter_Test {
         WebElement inputName;
         try {
             inputName = driver.findElement(By.xpath("//*[@name='session[username_or_email]']"));
-
         } catch (NoSuchElementException e) {
             deleteTweet(twitter, tweetId);
             deleteTweet(twitter, replyTweetId);
